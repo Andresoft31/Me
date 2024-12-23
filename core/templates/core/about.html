@@ -1,0 +1,24 @@
+
+
+    {%  extends 'core/base.html' %}
+
+    {% block  title %}  About  {% endblock %}
+
+    {% block background %}{% load static %}{% static 'core/img/about.jpg' %}{% endblock %}
+
+    {% block headers %}
+    <h1>About me</h1>
+    <span class="subheading">Biography</span>
+    {% endblock %}
+ 
+    {% block content %} 
+    <div class="col-lg-3 col-md-4 offset-lg-1">
+        <img class="img-fluid avatar" src= "{% static 'core/img/avatarb.jpg' %}" alt="">
+    </div>
+    <div class="col-lg-7 col-md-8">
+        <h2 class="section-heading">Andres Canales</h2>   
+        <p>I'm Andres Canales, a developer with a strong passion for programming and software development. Throughout my career, I've worked on creating web and mobile applications, primarily using Python and Django. I'm driven by the challenge of tackling complex problems and finding innovative solutions that not only solve issues but also optimize code efficiency and quality.</p>
+        <p>I'm committed to continuous learning and always strive to improve my technical skills. I enjoy writing clean, efficient code and focus on the optimization and scalability of applications. I'm looking for new opportunities where I can apply my programming experience and contribute to the success of challenging technology projects. I'm a results-oriented professional with a focus on innovation and excellence in every task I undertake.</p>
+    </div>
+
+    {% endblock %}
